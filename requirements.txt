@@ -1,0 +1,6 @@
+python
+pandas
+plotly_express
+streamlit
+nbformat
+psutil
