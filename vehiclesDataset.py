@@ -16,7 +16,7 @@ st.subheader("Histográma")
 hist_checkbox = st.checkbox('Construir histográma')
 
 if hist_checkbox:
-    st.write('Histográma de la cantidad de vehículos con relación a su año del modelo')
+    st.write('Histográma de cantidad de vehículos por año del modelo')
 
     # crear un histograma
     fig = px.histogram(df_cars, x="model_year", labels={
@@ -38,7 +38,7 @@ disp_button = st.button('Crear gráfico de dispersión')
 
 if disp_button:
     st.write(
-        'Gráfico de dispersión del precio promedio de los vehículos con relación al año del modelo')
+        'Gráfico de dispersión del precio promedio por año del modelo')
 
     fig_disp = px.scatter(
         x=df_year_price['model_year'],
